@@ -1,0 +1,39 @@
+h2 {
+  color: #388e3c;
+  margin-bottom: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 24px;
+  background: #fff;
+  box-shadow: 0 2px 8px #e6e6e6;
+}
+
+th, td {
+  border: 1px solid #e0e0e0;
+  padding: 10px 16px;
+  text-align: left;
+}
+
+th {
+  background: #e8f5e9;
+}
+
+tr:nth-child(even) {
+  background: #f9fbe7;
+}
+
+button {
+  background: #388e3c;
+  color: #fff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #256029;
+}

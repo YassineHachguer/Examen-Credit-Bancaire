@@ -1,0 +1,21 @@
+<h2>Liste des remboursements</h2>
+<div *ngIf="loading">Chargement...</div>
+<table *ngIf="!loading">
+  <tr>
+    <th>ID</th>
+    <th>Date</th>
+    <th>Montant</th>
+    <th>Type</th>
+    <th>Actions</th>
+  </tr>
+  <tr *ngFor="let remboursement of remboursements">
+    <td>{{remboursement.id}}</td>
+    <td>{{remboursement.date | date}}</td>
+    <td>{{remboursement.montant}}</td>
+    <td>{{remboursement.type}}</td>
+    <td>
+      <button (click)="deleteRemboursement(remboursement.id)">Supprimer</button>
+      <button >Editer</button>
+    </td>
+  </tr>
+</table>

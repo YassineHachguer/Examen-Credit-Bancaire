@@ -1,0 +1,21 @@
+<h2>Liste des crédits</h2>
+<div *ngIf="loading">Chargement...</div>
+<table *ngIf="!loading">
+  <tr>
+    <th>ID</th>
+    <th>Date demande</th>
+    <th>Montant</th>
+    <th>Statut</th>
+    <th>Actions</th>
+  </tr>
+  <tr *ngFor="let credit of credits">
+    <td>{{credit.id}}</td>
+    <td>{{credit.dateDemande | date}}</td>
+    <td>{{credit.montant}}</td>
+    <td>{{credit.statut}}</td>
+    <td>
+      <button (click)="deleteCredit(credit.id)">Supprimer</button>
+      <button >Editer</button>
+    </td>
+  </tr>
+</table>
