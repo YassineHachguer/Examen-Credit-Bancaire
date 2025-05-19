@@ -13,5 +13,4 @@ public class CreditDTO {
     private int dureeRemboursement;
     private double tauxInteret;
     private Long clientId;
-    // Pour héritage, les champs spécifiques sont ajoutés dans les sous-DTO
 }
