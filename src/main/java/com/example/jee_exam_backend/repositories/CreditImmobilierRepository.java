@@ -1,0 +1,6 @@
+package com.example.jee_exam_backend.repositories;
+
+import com.example.jee_exam_backend.entities.CreditImmobilier;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CreditImmobilierRepository extends JpaRepository<CreditImmobilier, Long> {}
